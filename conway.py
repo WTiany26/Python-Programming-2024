@@ -50,7 +50,7 @@ for x in range(WIDTH):
         if currentCells[x][belowCoord] == '#':
             numNeighbors += 1 # Bottom neighbor is alive.
         if currentCells[rightCoord][belowCoord] == '#':
-        numNeighbors += 1 # Bottom-right neighbor is alive.
+            numNeighbors += 1 # Bottom-right neighbor is alive.
 
         # Set cell based on Conway's Game of Life rules:
         if currentCells[x][y] == '#' and (numNeighbors == 2 or numNeighbors == 3):
