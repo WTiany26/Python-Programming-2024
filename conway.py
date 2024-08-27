@@ -60,6 +60,6 @@ for x in range(WIDTH):
             # Dead cells with 3 neighbors become alive:
             nextCells[x][y] = '#'
         else:
-        # Everything else dies or stays dead:
-        nextCells[x][y] = ' '
+            # Everything else dies or stays dead:
+            nextCells[x][y] = ' '
     time.sleep(1) # Add a 1-second pause to reduce flickering.
